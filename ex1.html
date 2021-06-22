@@ -26,7 +26,7 @@
         <li><a href="#" class="nav-link px-2 link-secondary" id="allStudentMenu">รายชื่อทั้งหมด</a></li>
         <li><a href="#" class="nav-link px-2 link-dark" id="searchMenu">ค้นหา</a></li>
         <li><a href="#" class="nav-link px-2 link-dark" id="addStudentMenu">เพิ่มนักศึกษา</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark" id="editStudentMenu">แก้ไขข้อมูล</a></li>
       </ul>
 
       <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -92,7 +92,7 @@
           <th scope="col">#</th>
           <th scope="col">ชื่อ</th>
           <th scope="col">รหัส</th>
-          <th scope="col">เพศ</th>
+          <th scope="col">Gpa</th>
           <th scope="col">ลบ</th>
         </tr>
       </thead>
@@ -108,7 +108,7 @@
     </div>
     <div class="row">
       <div class="col-3"><b>Student Id:</b></div>
-      <div class="col-3" id="studentId">id</div>
+      <div class="col-3" id="studentId">student id</div>
     </div>
     <div class="row">
       <div class="col-3"><b>Name:</b></div>
@@ -119,10 +119,90 @@
       <div class="col-3" id="gpa">gpa</div>
     </div>
     <div class="row">
-      <div class="col-3"><b>Id:</b></div>
+      <div class="col-3"><b>Image:</b></div>
       <div class="col">
         <img src="asset/images/default.jpg" alt="default image" id="image">
       </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div id="outputEdit" class="px-5">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ชื่อ</th>
+            <th scope="col">นามสกุล</th>
+          </tr>
+        </thead>
+        <tbody id="tableBodyEdit">
+        </tbody>
+      </table>
+    </div>
+
+    <div id="sinigle_student_resultEdit" class="px-3 m-5">
+      <div class="row">
+        <div class="col-3"><b>Id:</b></div>
+        <div class="col-3" id="idEdit">id</div>
+      </div>
+      <div class="row">
+        <div class="col-3"><b>Student Id:</b></div>
+        <div class="col-3" id="studentIdEdit">student id</div>
+      </div>
+      <div class="row">
+        <div class="col-3"><b>Name:</b></div>
+        <div class="col-3" id="nameEdit">name</div>
+      </div>
+      <div class="row">
+        <div class="col-3"><b>Surname:</b></div>
+        <div class="col-3" id="surnameEdit">surname</div>
+      </div>
+      <div class="row">
+        <div class="col-3"><b>GPA:</b></div>
+        <div class="col-3" id="gpaEdit">gpa</div>
+      </div>
+      <div class="row">
+        <div class="col-3"><b>Image:</b></div>
+        <div class="col">
+          <img src="asset/images/default.jpg" alt="default image" id="imageEdit">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-primary" id="edit">Edit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="addEditUserDetail">
+    <div class="d-flex justify-content-center my-3">
+      <form class="row gy-2 gx-3 align-items-center">
+        <div class="form-floating">
+          <input type="text" class="form-control" id="nameInputEdit" placeholder="ชื่อ">
+          <label for="nameInputEdit">Name</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="surnameInputEdit" placeholder="นามสกุล">
+          <label for="surnameInputEdit">Surname</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="studentIdInputEdit" placeholder="รหัสนักศึกษา">
+          <label for="studentIdInputEdit">รหัสนักศึกษา</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="gpaInputEdit" placeholder="gpa">
+          <label for="gpaInputEdit">GPA</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="imageLinkInputEdit" placeholder="image Link">
+          <label for="imageLinkInputEdit">Link รูป</label>
+        </div>
+        <div class="col-auto">
+          <button type="button" class="btn btn-primary" id="addButtonEdit">Submit</button>
+        </div>
+      </form>
     </div>
   </div>
 

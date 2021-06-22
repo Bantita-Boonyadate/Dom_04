@@ -181,7 +181,7 @@ function showDetail(id,one){
     gpa.innerHTML = one.gpa
     let image = document.getElementById('imageEdit')
     image.setAttribute('src',one.image)
-    // image.setAttribute('width',"304")
+    image.setAttribute('width',"350")
 }
 
 function showOneStudent(id){
@@ -198,14 +198,6 @@ function showOneStudent(id){
 function onLoad() {
 	// showAllStudents()
 	hideAll()
-
-
-	// fetch('https://dv-student-backend-2019.appspot.com/student')
-	// .then((response) => {
-	// 	return response.json()
-	// }).then(data => {
-	// 	addStudentData(data)
-	// })
 }
 
 var singleStudentResult = document.getElementById('sinigle_student_result')
